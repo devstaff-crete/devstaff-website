@@ -2,10 +2,10 @@
 
 :root {
   --color-green: #78be21;
-  --color-dark-gray: #3e3e40;
   --color-gray: #b3b3b3;
-  --color-gray-silver: #a5a5a5;
   --color-gray-light: #ebebeb;
+  --color-gray-silver: #a5a5a5;
+  --color-gray-dark: #3e3e40;
 }
 
 $green: #78be21;
@@ -381,96 +381,6 @@ section {
     height: 100%;
     object-fit: cover;
     object-position: 50% 50%;
-  }
-
-  &#events {
-    .card {
-      border-radius: 10px;
-      text-align: center;
-      border: none;
-      filter: drop-shadow(0px 5px 5px $light);
-
-      .card-header {
-        height: 60%;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        color: $white;
-        background-color: $dark;
-        border-radius: 10px 10px 0 0;
-        border: none;
-
-        .card-ribbon {
-          position: absolute;
-          top: 0;
-          left: 0;
-          padding: 4px 30px;
-          font-size: 14px;
-          background-color: $green;
-          border-top-left-radius: 10px;
-        }
-
-        .card-date {
-          svg {
-            width: 24px;
-            height: 24px;
-            margin-right: 5px;
-            vertical-align: text-bottom;
-            fill: $white;
-          }
-
-          span {
-            font-size: 24px;
-          }
-        }
-
-        h4 {
-          font-size: 34px;
-        }
-      }
-
-      .card-body {
-        display: flex;
-        align-items: center;
-        height: 20%;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-
-        .card-location {
-          width: 100%;
-          font-size: 21px;
-          font-weight: 600;
-          color: $dark;
-
-          svg {
-            width: 24px;
-            height: 24px;
-            margin-right: 5px;
-            vertical-align: text-bottom;
-            fill: $dark;
-          }
-        }
-      }
-
-      .card-footer {
-        display: flex;
-        align-items: center;
-        height: 20%;
-        background-color: $light;
-        border-radius: 0 0 10px 10px;
-        border: none;
-
-        .btn-link {
-          min-width: 100%;
-          padding: 10px 0;
-          font-size: 21px;
-          font-weight: 700;
-
-          &.btn-disabled {
-            color: $gray;
-          }
-        }
-      }
-    }
   }
 
   &#support {

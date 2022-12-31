@@ -1,10 +1,10 @@
-import Image from 'next/image';
+import Image, { ImageProps } from 'next/image';
 
 import globalStyles from '../../styles/globals.module.scss';
 import styles from './HeroSection.module.scss';
 
 type Props = {
-  imageSrc: string;
+  imageSrc: ImageProps['src'];
   title: string;
   subTitle?: string;
 };

@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 
+import EventCard from '../components/EventCard';
 import styles from '../styles/Home.module.scss';
 import globalStyles from '../styles/globals.module.scss';
 
@@ -80,6 +82,57 @@ export default function Home() {
                 <a href="https://www.meetup.com/devstaff" className="btn btn-primary mt-5">
                   JOIN US
                 </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="events">
+          <div className="container">
+            <div className="row mt-5 py-5">
+              <div className="col-12">
+                <h2 className={globalStyles.sectionTitle}>EVENTS</h2>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12 col-sm-6 col-lg-3 py-4">
+                <EventCard
+                  date="13/01/2022"
+                  time="19.00"
+                  title="Agile Software Development - Open discussion"
+                  url="https://www.meetup.com/devstaff/events/288836591/"
+                />
+              </div>
+              <div className="col-12 col-sm-6 col-lg-3 py-4">
+                <EventCard
+                  date="13/01/2022"
+                  time="19.00"
+                  title="Agile Software Development - Open discussion"
+                  url="https://www.meetup.com/devstaff/events/288836591/"
+                />
+              </div>{' '}
+              <div className="col-12 col-sm-6 col-lg-3 py-4">
+                <EventCard
+                  date="13/01/2022"
+                  time="19.00"
+                  title="Agile Software Development - Open discussion"
+                  url="https://www.meetup.com/devstaff/events/288836591/"
+                />
+              </div>{' '}
+              <div className="col-12 col-sm-6 col-lg-3 py-4">
+                <EventCard
+                  date="13/01/2022"
+                  time="19.00"
+                  title="Agile Software Development - Open discussion"
+                  url="https://www.meetup.com/devstaff/events/288836591/"
+                />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12 mb-5 pt-3 pb-5 text-center">
+                <Link href="/events" className="btn btn-primary">
+                  VIEW ALL
+                </Link>
               </div>
             </div>
           </div>
