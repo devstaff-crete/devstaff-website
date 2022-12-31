@@ -1,0 +1,91 @@
+.card {
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+  filter: drop-shadow(0px 5px 5px var(--color-gray-light));
+  height: 100%;
+}
+
+.cardHeader {
+  height: 60%;
+  padding: 48px 20px;
+  color: white;
+  background-color: var(--color-gray-dark);
+  border-radius: 10px 10px 0 0;
+  border: none;
+
+  h3 {
+    font-size: 34px;
+  }
+}
+
+.cardRibbon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4px 30px;
+  font-size: 14px;
+  background-color: var(--color-green);
+  border-top-left-radius: 10px;
+}
+
+.cardDate {
+  margin-bottom: 20px;
+
+  img {
+    margin-right: 20px;
+    vertical-align: text-bottom;
+  }
+
+  span {
+    font-size: 24px;
+  }
+}
+
+.cardBody {
+  display: flex;
+  align-items: center;
+  height: 20%;
+  padding: 24px 20px;
+}
+
+.cardLocation {
+  width: 100%;
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--color-gray-dark);
+
+  img {
+    margin-right: 5px;
+    vertical-align: text-bottom;
+  }
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  height: 20%;
+  background-color: var(--color-gray-light);
+  border-radius: 0 0 10px 10px;
+  border: none;
+
+  a {
+    text-decoration: none;
+    min-width: 100%;
+    padding: 10px 0;
+    font-size: 21px;
+    font-weight: 700;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.disabledLink {
+  color: var(--color-gray);
+
+  &:hover {
+    color: var(--color-gray);
+  }
+}
