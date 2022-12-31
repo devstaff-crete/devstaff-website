@@ -45,14 +45,41 @@ export default function Home() {
                     <span>in Crete</span>
                   </h1>
                   <div className={styles.heroActions}>
-                    <a href="#" className="btn btn-light my-4">
+                    <a href="https://meetup.com/devstaff" className="btn btn-light my-4">
                       JOIN US
                     </a>
-                    <a href="#" className="btn btn-outline-light my-4">
+                    <a
+                      href="https://github.com/devstaff-crete/DevStaff-Heraklion"
+                      className="btn btn-outline-light my-4"
+                    >
                       LEARN MORE
                     </a>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="pb-3 pb-md-5">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 offset-md-2 col-md-8 text-center">
+                <h2 className={globalStyles.sectionTitle}>ABOUT</h2>
+                <p>
+                  There&apos;s a lot of us, devs, here in Crete. Yet, we hardly ever get together in large
+                  groups, or even know each other – somewhat strange for our small community, we hope
+                  you&apos;ll agree! This group is an attempt at bringing us all together for{' '}
+                  <a href="https://join.slack.com/t/devstaff/shared_invite/enQtNDYyNTI0NjUyMjczLWUyN2ZkOGJjYWQyMzU2MTE0MjViYTAxYWYxMjVlMzk2ZDk1N2I3ZGI2Y2MxMmMwN2JkNzY5MGUzMGRmN2NlNWM">
+                    informal chats
+                  </a>{' '}
+                  about what we&apos;re all passionate about: technology and software. Join the meetup, learn,
+                  teach, speak your mind, sharpen your skills, share the knowledge and help us build a
+                  community where devs can openly exchange ideas!
+                </p>
+                <a href="https://www.meetup.com/devstaff" className="btn btn-primary mt-5">
+                  JOIN US
+                </a>
               </div>
             </div>
           </div>

@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin:400,600,700&display=swap');
 
+:root {
+  --color-green: #78be21;
+  --color-dark-gray: #3e3e40;
+  --color-gray: #b3b3b3;
+  --color-gray-silver: #a5a5a5;
+  --color-gray-light: #ebebeb;
+}
+
 $green: #78be21;
 $dark: #3e3e40;
 $gray: #b3b3b3;
@@ -373,10 +381,6 @@ section {
     height: 100%;
     object-fit: cover;
     object-position: 50% 50%;
-  }
-
-  &#about {
-    text-align: center;
   }
 
   &#events {
