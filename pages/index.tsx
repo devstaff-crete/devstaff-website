@@ -97,32 +97,28 @@ export default function Home() {
             <div className="row">
               <div className="col-12 col-sm-6 col-lg-3 py-4">
                 <EventCard
-                  date="13/01/2022"
-                  time="19.00"
+                  dateTime="2023-01-13T19:00"
                   title="Agile Software Development - Open discussion"
                   url="https://www.meetup.com/devstaff/events/288836591/"
                 />
               </div>
               <div className="col-12 col-sm-6 col-lg-3 py-4">
                 <EventCard
-                  date="13/01/2022"
-                  time="19.00"
+                  dateTime="2022-03-13T19:00"
                   title="Agile Software Development - Open discussion"
                   url="https://www.meetup.com/devstaff/events/288836591/"
                 />
               </div>{' '}
               <div className="col-12 col-sm-6 col-lg-3 py-4">
                 <EventCard
-                  date="13/01/2022"
-                  time="19.00"
+                  dateTime="2022-11-19T19:00"
                   title="Agile Software Development - Open discussion"
                   url="https://www.meetup.com/devstaff/events/288836591/"
                 />
               </div>{' '}
               <div className="col-12 col-sm-6 col-lg-3 py-4">
                 <EventCard
-                  date="13/01/2022"
-                  time="19.00"
+                  dateTime="2022-12-31T19:00"
                   title="Agile Software Development - Open discussion"
                   url="https://www.meetup.com/devstaff/events/288836591/"
                 />

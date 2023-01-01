@@ -2,18 +2,37 @@ import Image from 'next/image';
 
 import styles from './EventCard.module.scss';
 
+type ISOString = `${number}-${number}-${number}T${number}:${number}`;
+
 type Props = {
-  date: string;
-  time: string;
+  dateTime: ISOString;
   title: string;
   url: string;
 };
 
-const EventCard = ({ date, time, title, url }: Props) => {
+const getDate = (date: Date) => {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return [day, month, year].join('/');
+};
+
+const getTime = (date: Date) => {
+  const hours = String(date.getHours()).padStart(2, '0');
+  const minutes = String(date.getMinutes()).padStart(2, '0');
+  return `${hours}:${minutes}`;
+};
+
+const EventCard = ({ dateTime, title, url }: Props) => {
+  const eventDate = new Date(dateTime);
+  const date = getDate(eventDate);
+  const time = getTime(eventDate);
+  const isInFuture = eventDate > new Date();
+
   return (
     <div className={styles.card}>
       <div className={styles.cardHeader}>
-        <div className={styles.cardRibbon}>UPCOMING</div>
+        {isInFuture ? <div className={styles.cardRibbon}>UPCOMING</div> : null}
         <div className={styles.cardDate}>
           <Image src="/icons/calendar.png" width="24" height="24" alt="calendar icon" />
           <span>{`${date} | ${time}`}</span>
@@ -27,7 +46,7 @@ const EventCard = ({ date, time, title, url }: Props) => {
         </div>
       </div>
       <div className={styles.cardFooter}>
-        <a href={url} className={`btn btn-link ${styles.disabledLink}`}>
+        <a href={url} className={`btn btn-link ${!isInFuture ? styles.disabledLink : null}`}>
           Book your seat
         </a>
       </div>
