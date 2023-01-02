@@ -5,29 +5,21 @@ import styles from './EventCard.module.scss';
 type ISOString = `${number}-${number}-${number}T${number}:${number}`;
 
 type Props = {
-  dateTime: ISOString;
+  date: `${number}/${number}/${number}`;
+  time: `${number}:${number}`;
   title: string;
-  url: string;
+  location: string;
+  locationUrl?: string;
+  eventUrl: string;
 };
 
-const getDate = (date: Date) => {
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, '0');
-  const day = String(date.getDate()).padStart(2, '0');
-  return [day, month, year].join('/');
-};
-
-const getTime = (date: Date) => {
-  const hours = String(date.getHours()).padStart(2, '0');
-  const minutes = String(date.getMinutes()).padStart(2, '0');
-  return `${hours}:${minutes}`;
-};
-
-const EventCard = ({ dateTime, title, url }: Props) => {
-  const eventDate = new Date(dateTime);
-  const date = getDate(eventDate);
-  const time = getTime(eventDate);
+const EventCard = ({ date, time, title, location, locationUrl, eventUrl }: Props) => {
+  const [day, month, year] = date.split('/');
+  const [hours, minutes] = time.split(':');
+  const eventDate = new Date(Number(year), Number(month) - 1, Number(day), Number(hours), Number(minutes));
   const isInFuture = eventDate > new Date();
+
+  const formattedDate = `${day.padStart(2, '0')}/${month.padStart(2, '0')}/${year}`;
 
   return (
     <div className={styles.card}>
@@ -35,18 +27,29 @@ const EventCard = ({ dateTime, title, url }: Props) => {
         {isInFuture ? <div className={styles.cardRibbon}>UPCOMING</div> : null}
         <div className={styles.cardDate}>
           <Image src="/icons/calendar.png" width="24" height="24" alt="calendar icon" />
-          <span>{`${date} | ${time}`}</span>
+          <span>{`${formattedDate} | ${time}`}</span>
         </div>
         <h3>{title}</h3>
       </div>
       <div className={styles.cardBody}>
         <div className={styles.cardLocation}>
           <Image src="/icons/location.png" width="24" height="24" alt="calendar icon" />
-          <span>Online, Zoom</span>
+          {locationUrl ? (
+            <a href={locationUrl} target="_blank" rel="noreferrer">
+              {location}
+            </a>
+          ) : (
+            <span>{location}</span>
+          )}
         </div>
       </div>
       <div className={styles.cardFooter}>
-        <a href={url} className={`btn btn-link ${!isInFuture ? styles.disabledLink : null}`}>
+        <a
+          href={eventUrl}
+          target="_blank"
+          rel="noreferrer"
+          className={`btn btn-link ${!isInFuture ? styles.disabledLink : null}`}
+        >
           Book your seat
         </a>
       </div>

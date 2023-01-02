@@ -53,12 +53,24 @@
   width: 100%;
   font-size: 21px;
   font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--color-gray-dark);
 
   img {
     margin-right: 5px;
-    vertical-align: text-bottom;
   }
+
+  a {
+    color: var(--color-gray-dark);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
 }
 
 .cardFooter {
