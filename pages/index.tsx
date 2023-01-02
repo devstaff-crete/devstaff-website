@@ -1,12 +1,22 @@
+import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import EventCard from '../components/EventCard';
+import { events } from '../data/events';
 import styles from '../styles/Home.module.scss';
 import globalStyles from '../styles/globals.module.scss';
 
-export default function Home() {
+export const getStaticProps = async () => {
+  return {
+    props: {
+      recentEvents: events.slice(0, 4)
+    }
+  };
+};
+
+const Home = ({ recentEvents }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <>
       <Head>
@@ -95,43 +105,18 @@ export default function Home() {
               </div>
             </div>
             <div className="row">
-              <div className="col-12 col-sm-6 col-lg-3 py-4">
-                <EventCard
-                  date="13/1/2023"
-                  time="19:00"
-                  title="Agile Software Development - Open discussion"
-                  location="FoRTH, Step-C Building"
-                  locationUrl="https://goo.gl/maps/nKysa4tszKjgPXPR9"
-                  eventUrl="https://www.meetup.com/devstaff/events/288836591/"
-                />
-              </div>
-              <div className="col-12 col-sm-6 col-lg-3 py-4">
-                <EventCard
-                  date="13/03/2022"
-                  time="19:00"
-                  title="Agile Software Development - Open discussion"
-                  location="Online, Zoom"
-                  eventUrl="https://www.meetup.com/devstaff/events/288836591/"
-                />
-              </div>{' '}
-              <div className="col-12 col-sm-6 col-lg-3 py-4">
-                <EventCard
-                  date="19/11/2022"
-                  time="19:00"
-                  title="Agile Software Development - Open discussion"
-                  location="Online, Zoom"
-                  eventUrl="https://www.meetup.com/devstaff/events/288836591/"
-                />
-              </div>{' '}
-              <div className="col-12 col-sm-6 col-lg-3 py-4">
-                <EventCard
-                  date="31/12/2022"
-                  time="19:00"
-                  title="Agile Software Development - Open discussion"
-                  location="Online, Zoom"
-                  eventUrl="https://www.meetup.com/devstaff/events/288836591/"
-                />
-              </div>
+              {recentEvents.map(({ date, time, title, location, locationUrl, eventUrl }) => (
+                <div key={eventUrl} className="col-12 col-sm-6 col-lg-3 py-4">
+                  <EventCard
+                    date={date}
+                    time={time}
+                    title={title}
+                    location={location}
+                    locationUrl={locationUrl}
+                    eventUrl={eventUrl}
+                  />
+                </div>
+              ))}
             </div>
             <div className="row">
               <div className="col-12 mb-5 pt-3 pb-5 text-center">
@@ -145,4 +130,6 @@ export default function Home() {
       </main>
     </>
   );
-}
+};
+
+export default Home;

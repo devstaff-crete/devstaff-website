@@ -2,8 +2,6 @@ import Image from 'next/image';
 
 import styles from './EventCard.module.scss';
 
-type ISOString = `${number}-${number}-${number}T${number}:${number}`;
-
 type Props = {
   date: `${number}/${number}/${number}`;
   time: `${number}:${number}`;
