@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import EventCard from '../components/EventCard';
+import SupportSection from '../components/SupportSection';
 import { events } from '../data/events';
 import styles from '../styles/Home.module.scss';
 import globalStyles from '../styles/globals.module.scss';
@@ -127,6 +128,8 @@ const Home = ({ recentEvents }: InferGetStaticPropsType<typeof getStaticProps>) 
             </div>
           </div>
         </section>
+
+        <SupportSection />
       </main>
     </>
   );
