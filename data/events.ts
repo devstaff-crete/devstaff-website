@@ -506,7 +506,7 @@ export const events: Event[] = [
     location: 'Main Building, FoRTH',
     locationUrl:
       'https://www.google.gr/maps/place/Foundation+for+Research+and+Technology+-+Hellas/@35.3051351,25.0725918,17z/data=!4m2!3m1!1s0x0000000000000000:0x0c8347768b841f2f?hl=en',
-    eventUrl: 'http://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/233882249/'
+    eventUrl: 'https://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/233882249/'
   },
   {
     date: '14/7/2016',
@@ -515,7 +515,7 @@ export const events: Event[] = [
     location: 'Main Building, FoRTH',
     locationUrl:
       'https://www.google.gr/maps/place/Foundation+for+Research+and+Technology+-+Hellas/@35.3051351,25.0725918,17z/data=!4m2!3m1!1s0x0000000000000000:0x0c8347768b841f2f?hl=en',
-    eventUrl: 'http://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/232532246/'
+    eventUrl: 'https://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/232532246/'
   },
   {
     date: '9/6/2016',
@@ -524,7 +524,7 @@ export const events: Event[] = [
     location: 'Main Building, FoRTH',
     locationUrl:
       'https://www.google.gr/maps/place/Foundation+for+Research+and+Technology+-+Hellas/@35.3051351,25.0725918,17z/data=!4m2!3m1!1s0x0000000000000000:0x0c8347768b841f2f?hl=en',
-    eventUrl: 'http://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/231211928/'
+    eventUrl: 'https://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/231211928/'
   },
   {
     date: '12/5/2016',
@@ -533,7 +533,7 @@ export const events: Event[] = [
     location: 'Main Building, FoRTH',
     locationUrl:
       'https://www.google.gr/maps/place/Foundation+for+Research+and+Technology+-+Hellas/@35.3051351,25.0725918,17z/data=!4m2!3m1!1s0x0000000000000000:0x0c8347768b841f2f?hl=en',
-    eventUrl: 'http://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/230538966/'
+    eventUrl: 'https://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/230538966/'
   },
   {
     date: '14/4/2016',
@@ -542,7 +542,7 @@ export const events: Event[] = [
     location: 'Main Building, FoRTH',
     locationUrl:
       'https://www.google.gr/maps/place/Foundation+for+Research+and+Technology+-+Hellas/@35.3051351,25.0725918,17z/data=!4m2!3m1!1s0x0000000000000000:0x0c8347768b841f2f?hl=en',
-    eventUrl: 'http://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/229757515/'
+    eventUrl: 'https://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/229757515/'
   },
   {
     date: '10/3/2016',
@@ -551,7 +551,7 @@ export const events: Event[] = [
     location: 'Main Building, FoRTH',
     locationUrl:
       'https://www.google.gr/maps/place/Foundation+for+Research+and+Technology+-+Hellas/@35.3051351,25.0725918,17z/data=!4m2!3m1!1s0x0000000000000000:0x0c8347768b841f2f?hl=en',
-    eventUrl: 'http://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/228927029/'
+    eventUrl: 'https://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/228927029/'
   },
   {
     date: '11/2/2016',
@@ -559,7 +559,7 @@ export const events: Event[] = [
     title: 'Secure Development',
     location: 'Science & Technology Park of Crete, STEP-C',
     locationUrl: 'https://goo.gl/maps/9GbPNwvymg2BVwam6',
-    eventUrl: 'http://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/228230597/'
+    eventUrl: 'https://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/228230597/'
   },
   {
     date: '14/1/2016',
@@ -568,7 +568,7 @@ export const events: Event[] = [
     location: 'Main Building, FoRTH',
     locationUrl:
       'https://www.google.gr/maps/place/Foundation+for+Research+and+Technology+-+Hellas/@35.3051351,25.0725918,17z/data=!4m2!3m1!1s0x0000000000000000:0x0c8347768b841f2f?hl=en',
-    eventUrl: 'http://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/227356464/'
+    eventUrl: 'https://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/227356464/'
   },
   {
     date: '10/12/2015',
@@ -577,7 +577,7 @@ export const events: Event[] = [
     location: 'Main Building, FoRTH',
     locationUrl:
       'https://www.google.gr/maps/place/Foundation+for+Research+and+Technology+-+Hellas/@35.3051351,25.0725918,17z/data=!4m2!3m1!1s0x0000000000000000:0x0c8347768b841f2f?hl=en',
-    eventUrl: 'http://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/226695959/'
+    eventUrl: 'https://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/226695959/'
   },
   {
     date: '12/11/2015',
@@ -586,7 +586,7 @@ export const events: Event[] = [
     location: 'Main Building, FoRTH',
     locationUrl:
       'https://www.google.gr/maps/place/Foundation+for+Research+and+Technology+-+Hellas/@35.3051351,25.0725918,17z/data=!4m2!3m1!1s0x0000000000000000:0x0c8347768b841f2f?hl=en',
-    eventUrl: 'http://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/225897583/'
+    eventUrl: 'https://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/225897583/'
   },
   {
     date: '8/10/2015',
@@ -595,7 +595,7 @@ export const events: Event[] = [
     location: 'Main Building, FoRTH',
     locationUrl:
       'https://www.google.gr/maps/place/Foundation+for+Research+and+Technology+-+Hellas/@35.3051351,25.0725918,17z/data=!4m2!3m1!1s0x0000000000000000:0x0c8347768b841f2f?hl=en',
-    eventUrl: 'http://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/225364969/'
+    eventUrl: 'https://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/225364969/'
   },
   {
     date: '10/9/2015',
@@ -604,7 +604,7 @@ export const events: Event[] = [
     location: 'Main Building, FoRTH',
     locationUrl:
       'https://www.google.gr/maps/place/Foundation+for+Research+and+Technology+-+Hellas/@35.3051351,25.0725918,17z/data=!4m2!3m1!1s0x0000000000000000:0x0c8347768b841f2f?hl=en',
-    eventUrl: 'http://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/223851144/'
+    eventUrl: 'https://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/223851144/'
   },
   {
     date: '9/7/2015',
@@ -612,6 +612,6 @@ export const events: Event[] = [
     title: 'Git VCS',
     location: 'Science & Technology Park of Crete, STEP-C',
     locationUrl: 'https://goo.gl/maps/9GbPNwvymg2BVwam6',
-    eventUrl: 'http://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/223500458/'
+    eventUrl: 'https://www.meetup.com/DevStaff-A-Developer-Community-Gathering-In-Crete/events/223500458/'
   }
 ];
