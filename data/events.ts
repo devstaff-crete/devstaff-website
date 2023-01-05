@@ -384,7 +384,7 @@ export const events: Event[] = [
   {
     date: '09/11/2017',
     time: '20:00',
-    title: 'Microservices:',
+    title: 'Microservices',
     location: 'Main Building, FoRTH',
     locationUrl:
       'https://www.google.gr/maps/place/Foundation+for+Research+and+Technology+-+Hellas/@35.3051351,25.0725918,17z/data=!4m2!3m1!1s0x0000000000000000:0x0c8347768b841f2f?hl=en',
@@ -393,7 +393,7 @@ export const events: Event[] = [
   {
     date: '12/10/2017',
     time: '20:00',
-    title: 'Lightning Talks:',
+    title: 'Lightning Talks',
     location: 'Main Building, FoRTH',
     locationUrl:
       'https://www.google.gr/maps/place/Foundation+for+Research+and+Technology+-+Hellas/@35.3051351,25.0725918,17z/data=!4m2!3m1!1s0x0000000000000000:0x0c8347768b841f2f?hl=en',
