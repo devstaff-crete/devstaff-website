@@ -28,11 +28,11 @@ export default function Sponsors() {
         <div className="container">
           <div className="row pb-5">
             <div className="col-12">
-              <h3 className={globalStyles.sectionTitle}>OUR BELOVED PARTNERS</h3>
+              <h3 className={globalStyles.sectionTitle}>OUR BELOVED SPONSORS</h3>
             </div>
           </div>
           {sponsors.map(sponsor => (
-            <div className={`row ${styles.sponsorRow}`}>
+            <div key={sponsor.website} className={`row ${styles.sponsorRow}`}>
               <div className={`col-12 col-md-5 col-lg-4 ${styles.sponsorImage}`}>
                 <Image src={sponsor.image} alt={sponsor.title} />
               </div>
@@ -57,8 +57,13 @@ export default function Sponsors() {
           ))}
           <div className="row">
             <div className="col-12 mt-5 py-3 text-center">
-              <a href="#" className="btn btn-primary">
-                VIEW MORE
+              <a
+                href="https://opencollective.com/devstaff"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-primary"
+              >
+                BECOME A SPONSOR
               </a>
             </div>
           </div>
