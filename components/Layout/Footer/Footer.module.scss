@@ -1,0 +1,163 @@
+.footer {
+  background: var(--color-gray-dark);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+
+  svg {
+    max-width: 260px;
+    height: auto;
+    fill: var(--color-gray);
+  }
+
+  @media (min-width: 767px) {
+    justify-content: left;
+  }
+}
+
+.heading {
+  font-size: 16px;
+  color: var(--color-gray);
+}
+
+.followUs {
+  text-align: center;
+  padding: 0;
+
+  @media (min-width: 767px) {
+    padding-right: 100px;
+    text-align: left;
+  }
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding-bottom: 5px;
+    font-weight: 600;
+    color: white;
+
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        color: var(--color-green);
+      }
+    }
+  }
+}
+
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: 767px) {
+    padding-right: 100px;
+    justify-content: left;
+  }
+}
+
+.socialIcon {
+  display: flex;
+  justify-content: center;
+  margin: 10px 15px 0;
+
+  svg {
+    width: 36px;
+    height: 36px;
+    fill: var(--color-gray);
+  }
+
+  &:hover {
+    svg {
+      fill: var(--color-green);
+      transition: all 0.3s linear 0s;
+    }
+  }
+
+  @media (min-width: 767px) {
+    justify-content: left;
+    margin: 10px 30px 0 0;
+  }
+}
+
+.copyright {
+  font-size: 12px;
+  color: var(--color-gray-silver);
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: 767px) {
+    justify-content: left;
+  }
+}
+
+.designed {
+  font-size: 12px;
+  color: var(--color-gray-silver);
+  display: flex;
+justify-content: center;
+
+  margin-bottom: 16px;
+
+  a {
+    color: var(--color-gray-silver);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media (min-width: 767px) {
+    justify-content: left;
+  }
+}
+
+.scroll {
+  margin-top: 5px;
+  text-align: right;
+  i {
+    font-size: 2rem;
+  }
+}
+
+.scrollup {
+  display: none;
+  position: fixed;
+  bottom: -3px;
+  right: 10px;
+  width: 40px;
+  height: 30px;
+  padding: 4px 0 0 0;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  text-align: center;
+  background-color: var(--color-green);
+  color: white;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+
+  svg {
+    fill: white;
+  }
+
+  &:hover {
+    svg {
+      fill: var(--color-gray-dark);
+    }
+  }
+}

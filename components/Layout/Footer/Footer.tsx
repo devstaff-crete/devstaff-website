@@ -1,23 +1,26 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
-import facebookLogo from '../../../public/facebook-logo.svg';
-import githubLogo from '../../../public/github-logo.svg';
-import linkedinLogo from '../../../public/linkedin-logo.svg';
-import logo from '../../../public/logo-footer.svg';
+import FacebookLogo from '../../../public/facebook-logo.svg';
+import GithubLogo from '../../../public/github-logo.svg';
+import LinkedinLogo from '../../../public/linkedin-logo.svg';
+import Logo from '../../../public/logo-footer.svg';
+import styles from './Footer.module.scss';
 
 const Footer = () => {
   return (
-    <footer className="py-3">
+    <footer className={`py-3 ${styles.footer}`}>
       <div className="container">
         <div className="row mb-sm-4">
-          <div className="col-12 col-sm-6 col-lg-3 order-4 order-sm-3 order-lg-1 pb-3 pl-2 footer-logo">
-            <Image src={logo} alt="devstaff logo" />
+          <div className="col-12 col-sm-6 col-lg-3 order-4 order-sm-3 order-lg-1 pb-3 pl-2 py-3">
+            <div className={styles.logo}>
+
+            <Logo />
+            </div>
           </div>
 
           <div className="col-12 col-sm-6 col-lg-3 order-1 order-lg-2 py-3">
-            <h4>NAVIGATION</h4>
-            <ul>
+            <h4 className={styles.heading}>NAVIGATION</h4>
+            <ul className={styles.list}>
               <li>
                 <Link href="/">ABOUT</Link>
               </li>
@@ -44,8 +47,8 @@ const Footer = () => {
           </div>
 
           <div className="col-12 col-sm-6 col-lg-3 order-2 order-lg-3 py-3">
-            <h4>MORE</h4>
-            <ul>
+            <h4 className={styles.heading}>MORE</h4>
+            <ul className={styles.list}>
               <li>
                 <a
                   href="https://github.com/devstaff-crete/DevStaff-Heraklion/blob/master/CodeOfConduct.md"
@@ -68,25 +71,25 @@ const Footer = () => {
           </div>
 
           <div className="col-12 col-sm-6 col-lg-3 order-3 order-sm-4 order-lg-4 py-3">
-            <h4 className="follow_us">FOLLOW US</h4>
-            <ul className="footer-socials">
-              <li className="footer-socials__icon">
+            <h4 className={`${styles.followUs} ${styles.heading}`}>FOLLOW US</h4>
+            <ul className={styles.social}>
+              <li className={styles.socialIcon}>
                 <a
                   href="https://github.com/devstaff-crete/DevStaff-Heraklion"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Image src={githubLogo} alt="github logo" />
+                  <GithubLogo />
                 </a>
               </li>
-              <li className="footer-socials__icon">
+              <li className={styles.socialIcon}>
                 <a href="https://www.facebook.com/Devstaff" target="_blank" rel="noreferrer">
-                  <Image src={facebookLogo} alt="facebook logo" />
+                  <FacebookLogo />
                 </a>
               </li>
-              <li className="footer-socials__icon">
+              <li className={styles.socialIcon}>
                 <a href="https://www.linkedin.com/company/devstaff/" target="_blank" rel="noreferrer">
-                  <Image src={linkedinLogo} alt="linkedin logo" />
+                  <LinkedinLogo />
                 </a>
               </li>
             </ul>
@@ -94,22 +97,27 @@ const Footer = () => {
         </div>
 
         <div className="row">
-          <div className="col-12 col-sm-6 py-2 copyright">
-            <span>Copyright © DevStaff 2021. All rights reserved.</span>
+          <div className="col-12 col-sm-6 col-lg-9 py-2">
+            <div className={styles.copyright}>
+              Copyright © DevStaff {new Date().getFullYear()}. All rights reserved.
+            </div>
           </div>
 
-          <div className="col-12 col-sm-6 py-2 designed">
+          <div className="col-12 col-sm-6 col-lg-3 py-2">
+            <div className={styles.designed}>
+
             <span>
               Designed with &#10084; by{' '}
               <a href="https://www.micmei.gr/" target="_blank" rel="noreferrer">
                 Michael Meimaroglou Creative Studio
               </a>
             </span>
+            </div>
           </div>
         </div>
       </div>
 
-      <a href="#" id="pageScrollup" className="scrollup">
+      <a href="#" id="pageScrollup" className={styles.scrollup}>
         <svg width="16" height="16" viewBox="0 0 490 490">
           <polygon points="0,332.668 245.004,82.631 490,332.668 413.507,407.369 245.004,235.402 76.493,407.369" />
         </svg>
