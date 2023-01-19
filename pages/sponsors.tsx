@@ -2,15 +2,14 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 import HeroSection from '../components/HeroSection';
+import Layout from '../components/Layout/Layout';
 import SupportSection from '../components/SupportSection';
 import { sponsors } from '../data/sponsors';
-import abstractSponsorsImg from '../public/abstract-sponsors.svg';
-import exitIcon from '../public/icons/exit.svg';
-import facebookIcon from '../public/icons/facebook.svg';
-import linkedInIcon from '../public/icons/linkedin.svg';
+import ExitIcon from '../public/icons/exit.svg';
+import FacebookIcon from '../public/icons/facebook.svg';
+import LinkedInIcon from '../public/icons/linkedin.svg';
 import globalStyles from '../styles/globals.module.scss';
 import styles from '../styles/sponsors.module.scss';
-import Layout from "../components/Layout/Layout";
 
 export default function Sponsors() {
   return (
@@ -21,7 +20,13 @@ export default function Sponsors() {
       <HeroSection imageSrc="/hero-support.jpg" title="Our sponsors mean a lot for our efforts" />
       <div className={styles.sponsorsBackground}>
         <div className={styles.sponsorsAbstract}>
-          <Image src={abstractSponsorsImg} className={globalStyles.fitImage} alt="Sponsors Image" />
+          <Image
+            src="/abstract-sponsors.svg"
+            width="100"
+            height="100"
+            className={globalStyles.fitImage}
+            alt="Sponsors Image"
+          />
         </div>
       </div>
 
@@ -41,16 +46,16 @@ export default function Sponsors() {
                 <h3 className={styles.sponsorTitle}>{sponsor.title}</h3>
                 <div className={styles.sponsorLink}>
                   <a href={sponsor.website} target="_blank" rel="noreferrer">
-                    <span>Visit the website</span>{' '}
-                    <Image src={exitIcon} width={16} height={16} alt="exit icon" />
+                    <span>Visit the website</span>
+                    <ExitIcon />
                   </a>
                 </div>
                 <div className={styles.sponsorSocial}>
                   <a href={sponsor.facebookUrl} target="_blank" rel="noreferrer">
-                    <Image src={facebookIcon} width={16} height={16} alt="facebook icon" />
+                    <FacebookIcon />
                   </a>
                   <a href={sponsor.linkedInUrl} target="_blank" rel="noreferrer">
-                    <Image src={linkedInIcon} width={16} height={16} alt="linkedin icon" />
+                    <LinkedInIcon />
                   </a>
                 </div>
               </div>

@@ -48,11 +48,23 @@
 
   a {
     text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      svg {
+        fill: var(--color-gray-dark)
+      }
+    }
   }
 
-  img {
+  svg {
+    width: 16px;
+    height: 16px;
     margin-left: 15px;
     vertical-align: middle;
+    fill: var(--color-green);
+
   }
 
   @media (min-width: 767px) {
@@ -64,10 +76,20 @@
   padding-top: 16px;
   text-align: center;
 
-  img {
+  a:hover {
+    svg {
+      fill: var(--color-green)
+    }
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
     margin-right: 10px;
     vertical-align: text-bottom;
+    fill: var(--color-gray);
   }
+
 
   @media (min-width: 767px) {
     text-align: initial;
