@@ -10,10 +10,11 @@ import facebookIcon from '../public/icons/facebook.svg';
 import linkedInIcon from '../public/icons/linkedin.svg';
 import globalStyles from '../styles/globals.module.scss';
 import styles from '../styles/sponsors.module.scss';
+import Layout from "../components/Layout/Layout";
 
 export default function Sponsors() {
   return (
-    <>
+    <Layout>
       <Head>
         <title>Sponsors</title>
       </Head>
@@ -71,6 +72,6 @@ export default function Sponsors() {
       </section>
 
       <SupportSection compactView />
-    </>
+    </Layout>
   );
 }

@@ -5,6 +5,7 @@ import { useState } from 'react';
 import EventCard from '../components/EventCard';
 import HeroSection from '../components/HeroSection';
 import { events } from '../data/events';
+import Layout from "../components/Layout/Layout";
 
 export const getStaticProps = async () => {
   return {
@@ -21,7 +22,7 @@ export default function Events({ events }: InferGetStaticPropsType<typeof getSta
   const presentedEvents = showAll ? events : events.slice(0, INITIAL_LIMIT);
 
   return (
-    <>
+    <Layout>
       <Head>
         <title>Events</title>
       </Head>
@@ -53,6 +54,6 @@ export default function Events({ events }: InferGetStaticPropsType<typeof getSta
           ) : null}
         </div>
       </section>
-    </>
+    </Layout>
   );
 }
