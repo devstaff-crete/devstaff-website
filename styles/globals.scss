@@ -36,38 +36,6 @@ a {
   }
 }
 
-a.scrollup {
-  display: none;
-  position: fixed;
-  bottom: -3px;
-  right: 10px;
-  width: 40px;
-  height: 30px;
-  padding: 4px 0 0 0;
-  font-size: 1rem;
-  line-height: 1.3rem;
-  text-align: center;
-  background-color: $green;
-  color: $white;
-  border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-
-  svg {
-    fill: $white;
-  }
-
-  &:hover {
-    svg {
-      fill: $dark;
-    }
-  }
-}
-
 p {
   margin: 1.5rem 0;
   font-size: 1.2rem;

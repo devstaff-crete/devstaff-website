@@ -13,8 +13,7 @@ const Footer = () => {
         <div className="row mb-sm-4">
           <div className="col-12 col-sm-6 col-lg-3 order-4 order-sm-3 order-lg-1 pb-3 pl-2 py-3">
             <div className={styles.logo}>
-
-            <Logo />
+              <Logo />
             </div>
           </div>
 
@@ -105,23 +104,16 @@ const Footer = () => {
 
           <div className="col-12 col-sm-6 col-lg-3 py-2">
             <div className={styles.designed}>
-
-            <span>
-              Designed with &#10084; by{' '}
-              <a href="https://www.micmei.gr/" target="_blank" rel="noreferrer">
-                Michael Meimaroglou Creative Studio
-              </a>
-            </span>
+              <span>
+                Designed with &#10084; by{' '}
+                <a href="https://www.micmei.gr/" target="_blank" rel="noreferrer">
+                  Michael Meimaroglou Creative Studio
+                </a>
+              </span>
             </div>
           </div>
         </div>
       </div>
-
-      <a href="#" id="pageScrollup" className={styles.scrollup}>
-        <svg width="16" height="16" viewBox="0 0 490 490">
-          <polygon points="0,332.668 245.004,82.631 490,332.668 413.507,407.369 245.004,235.402 76.493,407.369" />
-        </svg>
-      </a>
     </footer>
   );
 };
