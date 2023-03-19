@@ -4,8 +4,8 @@ import { useState } from 'react';
 
 import EventCard from '../components/EventCard';
 import HeroSection from '../components/HeroSection';
+import Layout from '../components/Layout';
 import { events } from '../data/events';
-import Layout from "../components/Layout/Layout";
 
 export const getStaticProps = async () => {
   return {

@@ -1,14 +1,14 @@
-import { GetStaticProps, InferGetStaticPropsType } from 'next';
+import { InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import EventCard from '../components/EventCard';
+import Layout from '../components/Layout';
 import SupportSection from '../components/SupportSection';
 import { events } from '../data/events';
 import styles from '../styles/Home.module.scss';
 import globalStyles from '../styles/globals.module.scss';
-import Layout from "../components/Layout/Layout";
 
 export const getStaticProps = async () => {
   return {

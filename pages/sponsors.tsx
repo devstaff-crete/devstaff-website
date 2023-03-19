@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 import HeroSection from '../components/HeroSection';
-import Layout from '../components/Layout/Layout';
+import Layout from '../components/Layout';
 import SupportSection from '../components/SupportSection';
 import { sponsors } from '../data/sponsors';
 import ExitIcon from '../public/icons/exit.svg';
