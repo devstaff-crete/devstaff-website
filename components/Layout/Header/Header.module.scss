@@ -1,7 +1,8 @@
 .header {
+  position: relative;
   padding: 22px 0;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  z-index: 1;
 }
 
 .wrapper {
@@ -31,14 +32,37 @@
   opacity: 1;
   transition: all 0.5s ease;
 
+  &.active {
+    background: white;
+    left: 0;
+    opacity: 0.97;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
   ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0;
+    padding: 20px 0 0 0;
+
+    @media (min-width: 767px) {
+      flex-direction: row;
+      padding-top: 5px;
+    }
   }
 
   li {
-    margin-right: 50px;
+    padding: 10px 0;
+
+    @media (min-width: 767px) {
+      padding: 0;
+      margin-right: 50px;
+    }
+
   }
 
   .activeLink {

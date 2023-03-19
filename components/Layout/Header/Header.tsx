@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 import styles from './Header.module.scss';
 
@@ -54,7 +54,7 @@ const Header = () => {
             </ul>
           </nav>
           <div className={styles.menuIcon} onClick={toggleMenu}>
-            <FaBars />
+            {isMenuOpen ? <FaTimes /> : <FaBars />}
           </div>
         </div>
       </div>
