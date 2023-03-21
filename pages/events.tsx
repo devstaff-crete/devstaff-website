@@ -5,6 +5,7 @@ import { useState } from 'react';
 import EventCard from '../components/EventCard';
 import HeroSection from '../components/HeroSection';
 import Layout from '../components/Layout';
+import PageMeta from '../components/PageMeta';
 import { events } from '../data/events';
 
 export const getStaticProps = async () => {
@@ -23,9 +24,7 @@ export default function Events({ events }: InferGetStaticPropsType<typeof getSta
 
   return (
     <Layout>
-      <Head>
-        <title>Events</title>
-      </Head>
+      <PageMeta title="Events - DevStaff" />
       <HeroSection imageSrc="/hero-events.jpg" title="EVENTS" subTitle="What about new web trends?" />
       <section id="events">
         <div className="container">

@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import HeroSection from '../components/HeroSection';
 import Layout from '../components/Layout';
+import PageMeta from '../components/PageMeta';
 import SupportSection from '../components/SupportSection';
 import { sponsors } from '../data/sponsors';
 import ExitIcon from '../public/icons/exit.svg';
@@ -14,9 +15,7 @@ import styles from '../styles/sponsors.module.scss';
 export default function Sponsors() {
   return (
     <Layout>
-      <Head>
-        <title>Sponsors</title>
-      </Head>
+      <PageMeta title="Sponsors - DevStaff" />
       <HeroSection imageSrc="/hero-support.jpg" title="Our sponsors mean a lot for our efforts" />
       <div className={styles.sponsorsBackground}>
         <div className={styles.sponsorsAbstract}>
