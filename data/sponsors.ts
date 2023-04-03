@@ -2,16 +2,20 @@ import { StaticImageData } from 'next/image';
 
 import enartiaLogo from '../public/sponsors/EnartiaLogo.png';
 import pancretaLogo from '../public/sponsors/Logo_Pancreta.png';
+import oxygenLogo from '../public/sponsors/Oxygen-logo.png';
+import vodafoneLogo from '../public/sponsors/Vodafone-logo.png';
 import webtrailsLogo from '../public/sponsors/Webtrails_logo.png';
+import advantageLogo from '../public/sponsors/advantage_fse.png';
 import bestpriceLogo from '../public/sponsors/bestprice.png';
 import cyberlogicLogo from '../public/sponsors/cyberlogic_logo.png';
-import fairloLogo from '../public/sponsors/fairlo.png';
+import fairloLogo from '../public/sponsors/fairlo_logo.png';
 import forthLogo from '../public/sponsors/forth_logo.png';
 import jetbrainsLogo from '../public/sponsors/jetbrains.png';
 import office12Logo from '../public/sponsors/office12_logo.png';
 import phatwebLogo from '../public/sponsors/phatweb-logo.png';
-import stepCLogo from '../public/sponsors/step-c_logo_EN.png';
+import stepCLogo from '../public/sponsors/stepc_logo.jpeg';
 import sunlightLogo from '../public/sponsors/sunlight-logo.png';
+import telestriderLogo from '../public/sponsors/telestrider.png';
 import uocLogo from '../public/sponsors/uoc_logo.png';
 import yodeckLogo from '../public/sponsors/yodeck.png';
 
@@ -25,11 +29,11 @@ type Sponsor = {
 
 export const sponsors: Sponsor[] = [
   {
-    title: 'Step-C',
-    image: stepCLogo,
-    website: 'https://www.stepc.gr',
-    facebookUrl: 'https://el-gr.facebook.com/STEPCRETE/',
-    linkedInUrl: 'https://www.linkedin.com/company/science-and-technology-park'
+    title: 'Yodeck',
+    image: yodeckLogo,
+    website: 'https://www.yodeck.com/',
+    facebookUrl: 'https://www.facebook.com/yodeck.digital.signage/',
+    linkedInUrl: 'https://www.linkedin.com/showcase/yodeck/'
   },
   {
     title: 'Fairlo',
@@ -39,18 +43,11 @@ export const sponsors: Sponsor[] = [
     linkedInUrl: 'https://www.linkedin.com/company/fairlo/'
   },
   {
-    title: 'BestPrice',
-    image: bestpriceLogo,
-    website: 'https://www.bestprice.gr/',
-    facebookUrl: 'https://el-gr.facebook.com/bestprice.gr',
-    linkedInUrl: 'https://www.linkedin.com/company/bestprice-gr/'
-  },
-  {
-    title: 'Yodeck',
-    image: yodeckLogo,
-    website: 'https://www.yodeck.com/',
-    facebookUrl: 'https://www.facebook.com/yodeck.digital.signage/',
-    linkedInUrl: 'https://www.linkedin.com/showcase/yodeck/'
+    title: 'Step-C',
+    image: stepCLogo,
+    website: 'https://www.stepc.gr',
+    facebookUrl: 'https://el-gr.facebook.com/STEPCRETE/',
+    linkedInUrl: 'https://www.linkedin.com/company/science-and-technology-park'
   },
   {
     title: 'JetBrains',
@@ -58,6 +55,41 @@ export const sponsors: Sponsor[] = [
     website: 'https://www.jetbrains.com/',
     facebookUrl: 'https://www.facebook.com/JetBrains/',
     linkedInUrl: 'https://www.linkedin.com/company/jetbrains/'
+  },
+  {
+    title: 'Oxygen Pelatologio',
+    image: oxygenLogo,
+    website: 'https://www.oxygen.gr/',
+    facebookUrl: 'https://facebook.com/pelatologio/',
+    linkedInUrl: 'https://www.linkedin.com/company/pelatologio/'
+  },
+  {
+    title: 'Vodafone Greece',
+    image: vodafoneLogo,
+    website: 'https://www.vodafone.gr/',
+    facebookUrl: 'https://www.facebook.com/vodafonegreece/',
+    linkedInUrl: 'https://www.linkedin.com/company/vodafone/'
+  },
+  {
+    title: 'Advantage FSE',
+    image: advantageLogo,
+    website: 'https://www.afse.eu/',
+    facebookUrl: 'https://www.facebook.com/AdvantageFSE/',
+    linkedInUrl: 'https://www.linkedin.com/company/advantage-fse/'
+  },
+  {
+    title: 'BestPrice',
+    image: bestpriceLogo,
+    website: 'https://www.bestprice.gr/',
+    facebookUrl: 'https://el-gr.facebook.com/bestprice.gr',
+    linkedInUrl: 'https://www.linkedin.com/company/bestprice-gr/'
+  },
+  {
+    title: 'Telestrider',
+    image: telestriderLogo,
+    website: 'https://telestrider.com/',
+    facebookUrl: 'https://www.facebook.com/telestrider',
+    linkedInUrl: 'https://www.linkedin.com/company/telestrider/'
   },
   {
     title: 'Enartia',
