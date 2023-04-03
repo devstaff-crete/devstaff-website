@@ -50,6 +50,7 @@
     text-decoration: none;
     display: flex;
     align-items: center;
+    justify-content: center;
 
     &:hover {
       svg {
@@ -69,6 +70,10 @@
 
   @media (min-width: 767px) {
     text-align: initial;
+
+    a {
+      justify-content: left;
+    }
   }
 }
 
