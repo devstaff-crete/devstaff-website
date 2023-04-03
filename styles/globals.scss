@@ -8,30 +8,23 @@
   --color-gray-dark: #3e3e40;
 }
 
-$green: #78be21;
-$dark: #3e3e40;
-$gray: #b3b3b3;
-$silver: #a5a5a5;
-$light: #ebebeb;
-$white: #fff;
-
 body {
   width: 100%;
   min-width: 320px;
   font-family: 'Cabin', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background: $white;
-  color: $dark;
+  background: white;
+  color: var(--color-gray-dark);
 }
 
 a {
-  color: $green;
+  color: var(--color-green);
   font-weight: 600;
 
   &:hover,
   &.active {
-    color: $dark;
+    color: var(--color-gray-dark);
     text-decoration: none;
   }
 }
@@ -50,9 +43,9 @@ p {
 }
 
 .btn-light {
-  background-color: $white;
-  border-color: $white;
-  color: $green;
+  background-color: white;
+  border-color: white;
+  color: var(--color-green);
 
   &:hover,
   &:focus,
@@ -61,16 +54,16 @@ p {
   &.focus,
   &active:focus,
   &:active:focus {
-    background-color: $green;
-    border-color: $green;
-    color: $white;
+    background-color: var(--color-green);
+    border-color: var(--color-green);
+    color: white;
   }
 }
 
 .btn-outline-light {
-  background-color: none;
-  border-color: $white;
-  color: $white;
+  background-color: transparent;
+  border-color: white;
+  color: white;
 
   &:hover,
   &:focus,
@@ -79,16 +72,16 @@ p {
   &.focus,
   &active:focus,
   &:active:focus {
-    background-color: $white;
-    border-color: $white;
-    color: $green;
+    background-color: white;
+    border-color: white;
+    color: var(--color-green);
   }
 }
 
 .btn-primary {
-  background-color: $green;
-  border-color: $green;
-  color: $white;
+  background-color: var(--color-green);
+  border-color: var(--color-green);
+  color: white;
 
   &:hover,
   &:focus,
@@ -97,14 +90,14 @@ p {
   &.focus,
   &active:focus,
   &:active:focus {
-    background-color: $dark;
-    border-color: $dark;
-    color: $white;
+    background-color: var(--color-gray-dark);
+    border-color: var(--color-gray-dark);
+    color: white;
   }
 }
 
 .btn-link {
-  color: $green;
+  color: var(--color-green);
 
   &:hover,
   &:focus,
@@ -113,372 +106,10 @@ p {
   &.focus,
   &active:focus,
   &:active:focus {
-    color: $green;
-  }
-}
-
-.form-control {
-  height: 50px;
-  padding: 1rem;
-  border-color: $light;
-
-  &:focus {
-    color: $green;
-    border-color: #8bba15;
-    box-shadow: 0 0 20px rgba(139, 186, 21, 0.25);
-  }
-}
-
-.greenBox {
-  label {
-    position: relative;
-
-    &:before {
-      content: '';
-      position: absolute;
-      width: 24px;
-      height: 24px;
-      top: 0;
-      left: -32px;
-      background: $white;
-      border: 1px solid $light;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    &:after {
-      content: '';
-      position: absolute;
-      width: 16px;
-      height: 8px;
-      top: 6px;
-      left: -28px;
-      border: 3px solid $green;
-      border-top: none;
-      border-right: none;
-      background: transparent;
-      opacity: 0;
-      -webkit-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-    }
-  }
-
-  label:hover::after {
-    opacity: 0.3;
-  }
-
-  input[type='checkbox'] {
-    visibility: hidden;
-  }
-
-  input[type='checkbox']:checked + label:after {
-    opacity: 1;
-  }
-}
-
-header {
-  padding-top: 22px;
-  padding-bottom: 22px;
-
-  .navbar {
-    position: relative;
-    margin: 0 auto;
-    padding: 0 200px 0 0;
-    transition: all 0.3s ease-in-out;
-
-    .navbar-toggler {
-      margin-top: 1.5rem;
-      border: none !important;
-      background: transparent !important;
-      cursor: pointer;
-      z-index: 1001;
-
-      .icon-bar {
-        display: block;
-        width: 22px;
-        height: 2px;
-        margin-bottom: 4px;
-        background-color: $dark;
-        transition: all 0.2s;
-      }
-
-      .top-bar {
-        background-color: $green;
-        transform: rotate(45deg);
-        transform-origin: 10% 10%;
-      }
-
-      .middle-bar {
-        opacity: 0;
-      }
-
-      .bottom-bar {
-        background-color: $green;
-        transform: rotate(-45deg);
-        transform-origin: 10% 90%;
-      }
-
-      &.collapsed .icon-bar {
-        background-color: $dark;
-      }
-      &.collapsed .top-bar {
-        transform: rotate(0);
-      }
-
-      &.collapsed .middle-bar {
-        opacity: 1;
-      }
-
-      &.collapsed .bottom-bar {
-        transform: rotate(0);
-      }
-    }
-
-    .navbar-brand {
-      margin: 0;
-      padding: 0;
-      height: 45px;
-      transition: height 0.3s ease;
-      -moz-transition: height 0.3s ease;
-      -webkit-transition: height 0.3s ease;
-      -o-transition: height 0.3s ease;
-
-      h1 {
-        margin: 0;
-      }
-
-      img {
-        width: auto;
-        height: 100%;
-        transition: width 0.3s ease;
-        -moz-transition: width 0.3s ease;
-        -webkit-transition: width 0.3s ease;
-        -o-transition: width 0.3s ease;
-      }
-    }
-
-    .navbar-nav {
-      .nav-item {
-        .nav-link {
-          margin: 0 0 0 60px;
-          padding: 0 2px;
-          font-size: 1rem;
-          font-weight: 600;
-          color: $dark;
-
-          &:hover,
-          &:active,
-          &.active {
-            transition: all 0.3s linear 0s;
-            color: $green;
-
-            span {
-              &:before {
-                bottom: 17%;
-                height: 66%;
-                background: $green;
-                transition: all 0.3s linear 0s;
-              }
-            }
-          }
-
-          span {
-            position: relative;
-
-            &:before {
-              content: ' ';
-              position: absolute;
-              right: -7px;
-              bottom: 50%;
-              width: 2px;
-              height: 10%;
-              transform: skew(-0.075turn, 25deg);
-            }
-          }
-        }
-
-        &:first-child {
-          .nav-link {
-            margin: 0;
-          }
-        }
-      }
-    }
-
-    .navbar-socials {
-      position: absolute;
-      top: 5px;
-      right: 0;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-
-      .navbar-socials__icon {
-        display: inline-block;
-        margin: 0 0 0 20px;
-
-        svg {
-          width: 24px;
-          height: 24px;
-          fill: $gray;
-        }
-
-        &:hover {
-          svg {
-            fill: $green;
-            transition: all 0.3s linear 0s;
-          }
-        }
-      }
-    }
+    color: var(--color-green);
   }
 }
 
 section {
   position: relative;
-
-  .fit-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 50% 50%;
-  }
-
-  &#contact {
-    .contact__background {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-
-      .contact__abstract {
-        position: absolute;
-        width: 100%;
-        height: 130%;
-        top: -40%;
-
-        .fit-image {
-          object-position: 50% 50%;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl {
-    max-width: 1440px;
-  }
-}
-
-@media (max-width: 1199px) {
-  header {
-    .navbar {
-      padding: 0 130px 0 0;
-
-      .navbar-nav {
-        .nav-item {
-          .nav-link {
-            margin: 0 0 0 35px;
-          }
-        }
-      }
-
-      .navbar-socials {
-        .navbar-socials__icon {
-          margin: 0 0 0 10px;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  header {
-    .navbar {
-      padding: 0;
-
-      .navbar-nav {
-        margin-top: 18px;
-
-        .nav-item {
-          .nav-link {
-            margin: 0 0 0 15px;
-          }
-        }
-      }
-
-      .navbar-socials {
-        top: -17px;
-        right: 5px;
-
-        .navbar-socials__icon {
-          svg {
-            width: 20px;
-            height: 20px;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  .container {
-    max-width: 100%;
-  }
-
-  header {
-    .navbar {
-      padding: 0;
-
-      .navbar-toggler {
-        margin-top: 10px;
-      }
-
-      .navbar-brand {
-        width: 200px;
-      }
-
-      .navbar-nav {
-        padding-top: 30px;
-        padding-bottom: 20px;
-
-        .nav-item {
-          padding: 5px 0;
-          text-align: center;
-
-          .nav-link {
-            display: inline-block;
-            margin: 0;
-            text-align: center;
-          }
-        }
-      }
-
-      .navbar-socials {
-        position: relative;
-        display: block;
-        margin-bottom: 15px;
-        text-align: center;
-
-        .navbar-socials__icon {
-          margin: 0 10px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 379px) {
-  header {
-    .navbar {
-      .navbar-brand {
-        width: 100px;
-      }
-    }
-  }
 }
