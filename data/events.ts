@@ -9,6 +9,42 @@ type Event = {
 
 export const events: Event[] = [
   {
+    date: '05/04/2023',
+    time: '19:00',
+    title: 'From developer to entrepreneur',
+    location: 'FoRTH, Step-C Building',
+    locationUrl:
+      "https://www.google.com/maps/place/35%C2%B018'21.4%22N+25%C2%B004'28.8%22E/@35.30594,25.074657,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xe51f99caa40ecf3c!8m2!3d35.30594!4d25.074657",
+    eventUrl: 'https://www.meetup.com/devstaff/events/292549805/'
+  },
+  {
+    date: '09/03/2023',
+    time: '19:00',
+    title: 'React & Next.js',
+    location: 'FoRTH, Step-C Building',
+    locationUrl:
+      "https://www.google.com/maps/place/35%C2%B018'21.4%22N+25%C2%B004'28.8%22E/@35.30594,25.074657,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xe51f99caa40ecf3c!8m2!3d35.30594!4d25.074657",
+    eventUrl: 'https://www.meetup.com/devstaff/events/291958795/'
+  },
+  {
+    date: '09/02/2023',
+    time: '19:00',
+    title: 'Web Accessibility',
+    location: 'FoRTH, Step-C Building',
+    locationUrl:
+      "https://www.google.com/maps/place/35%C2%B018'21.4%22N+25%C2%B004'28.8%22E/@35.30594,25.074657,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xe51f99caa40ecf3c!8m2!3d35.30594!4d25.074657",
+    eventUrl: 'https://www.meetup.com/devstaff/events/291363458/'
+  },
+  {
+    date: '08/12/2022',
+    time: '19:00',
+    title: 'Authentication (AuthN) & Authorization (AuthZ)',
+    location: 'FoRTH, Step-C Building',
+    locationUrl:
+      "https://www.google.com/maps/place/35%C2%B018'21.4%22N+25%C2%B004'28.8%22E/@35.30594,25.074657,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xe51f99caa40ecf3c!8m2!3d35.30594!4d25.074657",
+    eventUrl: 'https://www.meetup.com/devstaff/events/289951423/'
+  },
+  {
     date: '13/10/2022',
     time: '19:00',
     title: 'Rust',
