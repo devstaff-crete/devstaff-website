@@ -126,7 +126,7 @@ const Home = ({ recentEvents }: InferGetStaticPropsType<typeof getStaticProps>) 
           </div>
         </section>
 
-        <SupportSection />
+        <SupportSection compactView={true} />
       </main>
     </Layout>
   );
