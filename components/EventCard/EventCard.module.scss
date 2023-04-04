@@ -1,4 +1,5 @@
 .card {
+  position: relative;
   border-radius: 10px;
   text-align: center;
   border: none;
@@ -13,6 +14,7 @@
   background-color: var(--color-gray-dark);
   border-radius: 10px 10px 0 0;
   border: none;
+  word-wrap: break-word;
 
   h3 {
     font-size: 34px;
