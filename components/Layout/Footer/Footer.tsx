@@ -8,6 +8,7 @@ import {
   FaTwitter,
   FaYoutube
 } from 'react-icons/fa';
+import { SiOpencollective } from 'react-icons/si';
 
 import Logo from '../../../public/logo-footer.svg';
 import styles from './Footer.module.scss';
@@ -101,6 +102,16 @@ const Footer = () => {
               <li className={styles.socialIcon}>
                 <a href="https://www.youtube.com/@DevStaff" target="_blank" rel="noreferrer" title="Youtube">
                   <FaYoutube size="32px" color="#b3b3b3" />
+                </a>
+              </li>
+              <li className={styles.socialIcon}>
+                <a
+                  href="https://opencollective.com/devstaff"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Open Collective"
+                >
+                  <SiOpencollective />
                 </a>
               </li>
               <li className={styles.socialIcon}>
