@@ -16,7 +16,7 @@
   font-size: 2rem;
   cursor: pointer;
 
-  @media (min-width: 767px) {
+  @media (min-width: 821px) {
     display: none;
   }
 }
@@ -40,7 +40,7 @@
     z-index: 1;
   }
 
-  ul {
+  .menu {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -49,20 +49,24 @@
     margin: 0;
     padding: 20px 0 0 0;
 
-    @media (min-width: 767px) {
+    @media (min-width: 821px) {
       flex-direction: row;
       padding-top: 5px;
     }
-  }
 
-  li {
-    padding: 10px 0;
+    li {
+      padding: 10px 0;
 
-    @media (min-width: 767px) {
-      padding: 0;
-      margin-right: 50px;
+      @media (min-width: 821px) {
+        padding: 0;
+        margin-right: 25px;
+      }
+
+      @media (min-width: 1024px) {
+        padding: 0;
+        margin-right: 50px;
+      }
     }
-
   }
 
   .activeLink {
@@ -104,7 +108,7 @@
     }
   }
 
-  @media (min-width: 767px) {
+  @media (min-width: 821px) {
     display: flex;
     flex: 1;
     justify-content: flex-end;
@@ -114,5 +118,42 @@
     height: auto;
     top: initial;
     left: initial;
+  }
+}
+
+.social {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: 821px) {
+    margin: 0;
+    justify-content: left;
+  }
+}
+
+.socialIcon {
+  margin-right: 20px;
+  a::after {
+    content: none;
+  }
+
+  svg {
+    width: 26px;
+    height: 26px;
+    fill: var(--color-gray);
+  }
+
+  &:hover {
+    svg {
+      fill: var(--color-green);
+      transition: all 0.3s linear 0s;
+    }
+  }
+
+  @media (min-width: 821px) {
+    justify-content: left;
   }
 }
