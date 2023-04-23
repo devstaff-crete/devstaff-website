@@ -11,6 +11,7 @@ import cyberlogicLogo from '../public/sponsors/cyberlogic_logo.png';
 import fairloLogo from '../public/sponsors/fairlo_logo.png';
 import forthLogo from '../public/sponsors/forth_logo.png';
 import jetbrainsLogo from '../public/sponsors/jetbrains.png';
+import micmei from '../public/sponsors/micmei.png';
 import office12Logo from '../public/sponsors/office12_logo.png';
 import phatwebLogo from '../public/sponsors/phatweb-logo.png';
 import stepCLogo from '../public/sponsors/stepc_logo.jpeg';
@@ -84,6 +85,14 @@ export const sponsors: Sponsor[] = [
     facebookUrl: 'https://el-gr.facebook.com/bestprice.gr',
     linkedInUrl: 'https://www.linkedin.com/company/bestprice-gr/'
   },
+  {
+    title: 'Michael Meimaroglou Creative Studio',
+    image: micmei,
+    website: 'https://https://www.micmei.gr/',
+    facebookUrl: 'https://www.facebook.com/micmeicreativestudio',
+    linkedInUrl: 'https://www.linkedin.com/company/michael-meimaroglou-creative-studio/'
+  },
+
   {
     title: 'Telestrider',
     image: telestriderLogo,
