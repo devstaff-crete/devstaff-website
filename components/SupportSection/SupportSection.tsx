@@ -30,7 +30,7 @@ const SupportSection = ({ compactView = false }: Props) => (
                 rel="noreferrer"
                 className="btn btn-primary my-4"
               >
-                GET IN TOUCH
+                SPONSOR US
               </a>
             </div>
           </div>
