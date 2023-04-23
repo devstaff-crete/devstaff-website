@@ -1,13 +1,11 @@
 import Image from 'next/image';
+import { FaExternalLinkAlt, FaFacebookSquare, FaLinkedinIn } from 'react-icons/fa';
 
 import HeroSection from '../components/HeroSection';
 import Layout from '../components/Layout';
 import PageMeta from '../components/PageMeta';
 import SupportSection from '../components/SupportSection';
 import { sponsors } from '../data/sponsors';
-import ExitIcon from '../public/icons/exit.svg';
-import FacebookIcon from '../public/icons/facebook.svg';
-import LinkedInIcon from '../public/icons/linkedin.svg';
 import globalStyles from '../styles/globals.module.scss';
 import styles from '../styles/sponsors.module.scss';
 
@@ -45,15 +43,15 @@ export default function Sponsors() {
                 <div className={styles.sponsorLink}>
                   <a href={sponsor.website} target="_blank" rel="noreferrer">
                     <span>Visit the website</span>
-                    <ExitIcon />
+                    <FaExternalLinkAlt />
                   </a>
                 </div>
                 <div className={styles.sponsorSocial}>
                   <a href={sponsor.facebookUrl} target="_blank" rel="noreferrer">
-                    <FacebookIcon />
+                    <FaFacebookSquare />
                   </a>
                   <a href={sponsor.linkedInUrl} target="_blank" rel="noreferrer">
-                    <LinkedInIcon />
+                    <FaLinkedinIn />
                   </a>
                 </div>
               </div>

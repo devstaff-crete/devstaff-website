@@ -54,7 +54,7 @@
 
     &:hover {
       svg {
-        fill: var(--color-gray-dark)
+        fill: var(--color-gray-dark);
       }
     }
   }
@@ -65,7 +65,6 @@
     margin-left: 15px;
     vertical-align: middle;
     fill: var(--color-green);
-
   }
 
   @media (min-width: 767px) {
@@ -83,18 +82,17 @@
 
   a:hover {
     svg {
-      fill: var(--color-green)
+      fill: var(--color-green);
     }
   }
 
   svg {
-    width: 16px;
-    height: 16px;
+    width: 22px;
+    height: 22px;
     margin-right: 10px;
     vertical-align: text-bottom;
     fill: var(--color-gray);
   }
-
 
   @media (min-width: 767px) {
     text-align: initial;
