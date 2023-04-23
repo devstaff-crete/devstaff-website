@@ -144,13 +144,13 @@ const Footer = () => {
         </div>
 
         <div className="row">
-          <div className="col-12 col-sm-6 col-lg-9 py-2">
+          <div className="col-12 col-sm-6 col-lg-6 py-2">
             <div className={styles.copyright}>
               Copyright © DevStaff {new Date().getFullYear()}. All rights reserved.
             </div>
           </div>
 
-          <div className="col-12 col-sm-6 col-lg-3 py-2">
+          <div className="col-12 col-sm-6 col-lg-6 py-2">
             <div className={styles.designed}>
               <span>
                 Designed with &#10084; by{' '}
