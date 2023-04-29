@@ -21,8 +21,8 @@ const SupportSection = ({ compactView = false }: Props) => (
       <div className="container">
         <div className="row">
           <div className="col-12 offset-lg-1 col-lg-10">
-            <h2 className={styles.supportTitle}>Would you like to support our community?</h2>
-            <h3 className={styles.supportSubtitle}>Become an Open Collective contributor</h3>
+            <h2 className={styles.supportTitle}>Would you like to support DevStaff community?</h2>
+            <h3 className={styles.supportSubtitle}>Become a contributor</h3>
             <div className={styles.supportActions}>
               <a
                 href="https://opencollective.com/devstaff"
