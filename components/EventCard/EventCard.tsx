@@ -48,7 +48,7 @@ const EventCard = ({ date, time, title, location, locationUrl, eventUrl }: Props
           rel="noreferrer"
           className={`btn btn-link ${!isInFuture ? styles.disabledLink : null}`}
         >
-          Book your seat
+          {isInFuture ? 'Book your seat' : 'View event'}
         </a>
       </div>
     </div>
