@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import {
+  FaEnvelope,
   FaFacebookSquare,
   FaGithub,
   FaLinkedinIn,
@@ -22,9 +23,14 @@ const Footer = () => {
             <div className={styles.logo}>
               <Logo />
             </div>
+
+            <div className={styles.email}>
+              <FaEnvelope />
+              <a href="mailto:info@devstaff.gr">info@devstaff.gr</a>
+            </div>
           </div>
 
-          <div className="col-12 col-sm-6 col-lg-3 order-1 order-lg-2 py-3">
+          <div className={`col-12 col-sm-6 col-lg-3 order-1 order-lg-2 py-3 ${styles.secondColumn}`}>
             <h4 className={styles.heading}>NAVIGATION</h4>
             <ul className={styles.list}>
               <li>
@@ -52,7 +58,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-12 col-sm-6 col-lg-3 order-2 order-lg-3 py-3">
+          <div className={`col-12 col-sm-6 col-lg-3 order-2 order-lg-3 py-3 ${styles.thirdColumn}`}>
             <h4 className={styles.heading}>MORE</h4>
             <ul className={styles.list}>
               <li>
