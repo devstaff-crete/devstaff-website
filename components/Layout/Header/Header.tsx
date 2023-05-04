@@ -52,7 +52,9 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a href="mailto:info@devstaff.gr">CONTACT</a>
+                <Link className={isActiveLink('/contact')} href="/contact">
+                  CONTACT
+                </Link>
               </li>
             </ul>
 
