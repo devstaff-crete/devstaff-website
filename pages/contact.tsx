@@ -1,12 +1,10 @@
 import Image from 'next/image';
-import { FaEnvelope, FaExternalLinkAlt, FaFacebookSquare, FaLinkedinIn } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa';
 
 import HeroSection from '../components/HeroSection';
 import Layout from '../components/Layout';
 import PageMeta from '../components/PageMeta';
 import SocialMedia from '../components/SocialMedia';
-import SupportSection from '../components/SupportSection';
-import { sponsors } from '../data/sponsors';
 import styles from '../styles/contact.module.scss';
 import globalStyles from '../styles/globals.module.scss';
 
@@ -38,7 +36,7 @@ export default function Contact() {
                   <p>You would like to be a delightful speaker?</p>
                   <p>You would like to fly?</p>
                   <br />
-                  <p className={styles.contactPrompt}>Don&apos;t hesitate to reach us via:</p>
+                  <p>Don&apos;t hesitate to reach us via:</p>
                 </div>
                 <div className={styles.contactDetails}>
                   <div className={styles.emailContainer}>

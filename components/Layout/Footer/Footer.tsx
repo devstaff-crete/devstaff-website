@@ -3,7 +3,6 @@ import { FaEnvelope } from 'react-icons/fa';
 
 import Logo from '../../../public/logo-footer.svg';
 import SocialMedia from '../../SocialMedia';
-import socialMedia from '../../SocialMedia';
 import styles from './Footer.module.scss';
 
 const Footer = () => {
@@ -53,6 +52,9 @@ const Footer = () => {
           <div className={`col-12 col-sm-6 col-lg-3 order-2 order-lg-3 py-3 ${styles.thirdColumn}`}>
             <h4 className={styles.heading}>MORE</h4>
             <ul className={styles.list}>
+              <li>
+                <Link href="/terms">TERMS AND CONDITIONS</Link>
+              </li>
               <li>
                 <a
                   href="https://github.com/devstaff-crete/DevStaff-Heraklion/blob/master/CodeOfConduct.md"
