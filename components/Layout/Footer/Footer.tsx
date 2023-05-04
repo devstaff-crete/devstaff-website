@@ -1,17 +1,9 @@
 import Link from 'next/link';
-import {
-  FaEnvelope,
-  FaFacebookSquare,
-  FaGithub,
-  FaLinkedinIn,
-  FaMeetup,
-  FaSlack,
-  FaTwitter,
-  FaYoutube
-} from 'react-icons/fa';
-import { SiOpencollective } from 'react-icons/si';
+import { FaEnvelope } from 'react-icons/fa';
 
 import Logo from '../../../public/logo-footer.svg';
+import SocialMedia from '../../SocialMedia';
+import socialMedia from '../../SocialMedia';
 import styles from './Footer.module.scss';
 
 const Footer = () => {
@@ -84,68 +76,9 @@ const Footer = () => {
 
           <div className="col-12 col-sm-6 col-lg-3 order-3 order-sm-4 order-lg-4 py-3">
             <h4 className={`${styles.followUs} ${styles.heading}`}>FOLLOW US</h4>
-            <ul className={styles.social}>
-              <li className={styles.socialIcon}>
-                <a href="https://www.facebook.com/Devstaff" target="_blank" rel="noreferrer" title="Facebook">
-                  <FaFacebookSquare />
-                </a>
-              </li>
-              <li className={styles.socialIcon}>
-                <a
-                  href="https://www.linkedin.com/company/devstaff/"
-                  target="_blank"
-                  rel="noreferrer"
-                  title="LinkedIn"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className={styles.socialIcon}>
-                <a href="https://twitter.com/devstaff_gr" target="_blank" rel="noreferrer" title="Twitter">
-                  <FaTwitter />
-                </a>
-              </li>
-              <li className={styles.socialIcon}>
-                <a href="https://www.youtube.com/@DevStaff" target="_blank" rel="noreferrer" title="Youtube">
-                  <FaYoutube size="32px" color="#b3b3b3" />
-                </a>
-              </li>
-              <li className={styles.socialIcon}>
-                <a
-                  href="https://opencollective.com/devstaff"
-                  target="_blank"
-                  rel="noreferrer"
-                  title="Open Collective"
-                >
-                  <SiOpencollective />
-                </a>
-              </li>
-              <li className={styles.socialIcon}>
-                <a
-                  href="https://join.slack.com/t/devstaff/shared_invite/enQtNDYyNTI0NjUyMjczLWUyN2ZkOGJjYWQyMzU2MTE0MjViYTAxYWYxMjVlMzk2ZDk1N2I3ZGI2Y2MxMmMwN2JkNzY5MGUzMGRmN2NlNWM"
-                  target="_blank"
-                  rel="noreferrer"
-                  title="Slack"
-                >
-                  <FaSlack />
-                </a>
-              </li>
-              <li className={styles.socialIcon}>
-                <a href="https://www.meetup.com/devstaff" target="_blank" rel="noreferrer" title="Meetup">
-                  <FaMeetup />
-                </a>
-              </li>
-              <li className={styles.socialIcon}>
-                <a
-                  href="https://github.com/devstaff-crete/DevStaff-Heraklion"
-                  target="_blank"
-                  rel="noreferrer"
-                  title="Github"
-                >
-                  <FaGithub />
-                </a>
-              </li>
-            </ul>
+            <div className={styles.socialMedia}>
+              <SocialMedia />
+            </div>
           </div>
         </div>
 
