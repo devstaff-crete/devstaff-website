@@ -42,9 +42,8 @@ const Footer = () => {
                   JOBS
                 </a>
               </li>
-
               <li>
-                <a href="mailto:info@devstaff.gr">CONTACT</a>
+                <Link href="/contact">CONTACT</Link>
               </li>
             </ul>
           </div>
