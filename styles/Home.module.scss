@@ -21,8 +21,7 @@
   top: 0;
   bottom: 100px;
   width: 100%;
-  background: rgba(19, 19, 19, 1);
-  background: linear-gradient(121deg, rgba(19, 19, 19, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%);
+  background: transparent linear-gradient(295deg, #ffffff8c 0%, #131313 100%) 0 0 no-repeat padding-box;
   opacity: 0.75;
 
   @media (min-width: 767px) {
