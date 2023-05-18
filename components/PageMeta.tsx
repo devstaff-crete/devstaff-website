@@ -22,13 +22,14 @@ const PageMeta = ({ title, description }: Props) => {
       <meta name="description" content={metaDescription} />
       <meta name="keywords" content="DevStaff, developers, tech, community, crete" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="image" content="https://devstaff.gr/logo_social.jpg">
 
       {/* Open Graph / Facebook */}
-      <meta property="og:title" content="" />
-      <meta property="og:description" content="" />
-      <meta property="og:url" content="https://www.devstaff.gr/" />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:url" content={`https://devstaff.gr${pathname}`} /
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="http://devstaff.gr/logo_social.jpg" />
+      <meta property="og:image" content="https://devstaff.gr/logo_social.jpg" />
 
       {/* Twitter */}
       <meta name="twitter:title" content={title} />
