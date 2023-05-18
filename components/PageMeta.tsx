@@ -12,7 +12,8 @@ const PageMeta = ({ title, description }: Props) => {
   const metaDescription =
     description ||
     'DevStaff is the developers community gathering in Crete. An attempt at bringing us all together for informal chats about technology and software. Join the next meetup!';
-  const ogImageUrl = `https://devstaff.gr/logo-full-green.png`;
+  const ogImageUrl = `https://devstaff.gr/logo-full-social.png`;
+  const ogImageUrlhttp = `http://devstaff.gr/logo-full-social.png`;
 
   return (
     <Head>
@@ -28,8 +29,10 @@ const PageMeta = ({ title, description }: Props) => {
       <meta property="og:description" content={metaDescription} />
       <meta property="og:url" content={`https://devstaff.gr${pathname}`} />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content={ogImageUrl} />
-      <meta property="og:image:secure_url" content={ogImageUrl} />
+      <meta property="og:image" content={ogImageUrlhttp} />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="1200" />
 
       {/* Twitter */}
       <meta name="twitter:title" content={title} />
