@@ -20,8 +20,7 @@ const PageMeta = ({ title, description }: Props) => {
       <title>{title}</title>
 
       <meta name="description" content={metaDescription} />
-      <meta name="image" content="logo-full-green.png" />
-      <meta name="keywords" content="DevStaff, developers community" />
+      <meta name="keywords" content="DevStaff, developers, tech, community, crete" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
 
       {/* Open Graph / Facebook */}
@@ -30,6 +29,7 @@ const PageMeta = ({ title, description }: Props) => {
       <meta property="og:url" content={`https://devstaff.gr${pathname}`} />
       <meta property="og:type" content="website" />
       <meta property="og:image" content={ogImageUrl} />
+      <meta property="og:image:secure_url" content={ogImageUrl} />
 
       {/* Twitter */}
       <meta name="twitter:title" content={title} />
