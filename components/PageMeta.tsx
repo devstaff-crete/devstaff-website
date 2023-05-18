@@ -28,7 +28,7 @@ const PageMeta = ({ title, description }: Props) => {
       <meta property="og:description" content={metaDescription} />
       <meta property="og:url" content={`https://devstaff.gr${pathname}`} />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="https://devstaff.gr/logo_social.png" />
+      <meta property="og:image" content="http://devstaff.gr/logo_social.jpg" />
 
       {/* Twitter */}
       <meta name="twitter:title" content={title} />
