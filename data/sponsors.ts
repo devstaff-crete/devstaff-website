@@ -88,7 +88,7 @@ export const sponsors: Sponsor[] = [
   {
     title: 'Michael Meimaroglou Creative Studio',
     image: micmei,
-    website: 'https://https://www.micmei.gr/',
+    website: 'https://www.micmei.gr/',
     facebookUrl: 'https://www.facebook.com/micmeicreativestudio',
     linkedInUrl: 'https://www.linkedin.com/company/michael-meimaroglou-creative-studio/'
   },
