@@ -9,6 +9,14 @@ type Event = {
 
 export const events: Event[] = [
   {
+    date: '07/09/2023',
+    time: '19:00',
+    title: 'Large Scale Search & Graph Processing',
+    location: 'FoRTH, Step-C Building',
+    locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
+    eventUrl: 'https://www.meetup.com/devstaff/events/295808524/'
+  },
+  {
     date: '13/07/2023',
     time: '19:00',
     title: 'Battle of Java Frameworks',
