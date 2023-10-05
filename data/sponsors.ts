@@ -19,7 +19,7 @@ import sunlightLogo from '../public/sponsors/sunlight-logo.png';
 import telestriderLogo from '../public/sponsors/telestrider.png';
 import uocLogo from '../public/sponsors/uoc_logo.png';
 import yodeckLogo from '../public/sponsors/yodeck.png';
-import epignosisLogo from '../public/sponsors/EpignosisLogo.png';
+import epignosisLogo from '../public/sponsors/epignosis-logo.png';
 
 type Sponsor = {
   title: string;
