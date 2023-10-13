@@ -9,6 +9,14 @@ type Event = {
 
 export const events: Event[] = [
   {
+    date: '12/10/2023',
+    time: '19:00',
+    title: 'Kubernetes: Scalable app deployments',
+    location: 'FoRTH, Step-C Building',
+    locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
+    eventUrl: 'https://www.meetup.com/devstaff/events/296426698/'
+  },
+  {
     date: '07/09/2023',
     time: '19:00',
     title: 'Large Scale Search & Graph Processing',
