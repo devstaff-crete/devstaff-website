@@ -9,6 +9,14 @@ type Event = {
 
 export const events: Event[] = [
   {
+    date: '11/01/2024',
+    time: '19:00',
+    title: 'First-Time Manager: From Team Member to Team Leader',
+    location: 'FoRTH, Step-C Building',
+    locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
+    eventUrl: 'https://www.meetup.com/devstaff/events/298311795/'
+  },
+  {
     date: '09/11/2023',
     time: '19:00',
     title: 'ChatGPT and Large Language Models (LLMs)',
