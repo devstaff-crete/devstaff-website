@@ -9,6 +9,22 @@ type Event = {
 
 export const events: Event[] = [
   {
+    date: '14/03/2024',
+    time: '19:00',
+    title: 'Elevating Software Quality: Inception, Accessibility and Performance Testing',
+    location: 'FoRTH, Step-C Building',
+    locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
+    eventUrl: 'https://www.meetup.com/devstaff/events/299507413/'
+  },
+  {
+    date: '08/02/2024',
+    time: '19:00',
+    title: 'Exploring whats new in Angular 17',
+    location: 'FoRTH, Step-C Building',
+    locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
+    eventUrl: 'https://www.meetup.com/devstaff/events/298888397/'
+  },
+  {
     date: '11/01/2024',
     time: '19:00',
     title: 'First-Time Manager: From Team Member to Team Leader',
