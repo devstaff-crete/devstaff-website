@@ -19,7 +19,7 @@ export const events: Event[] = [
   {
     date: '08/02/2024',
     time: '19:00',
-    title: 'Exploring whats new in Angular 17',
+    title: 'Exploring what `s new in Angular 17',
     location: 'FoRTH, Step-C Building',
     locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
     eventUrl: 'https://www.meetup.com/devstaff/events/298888397/'
