@@ -20,7 +20,7 @@ import telestriderLogo from '../public/sponsors/telestrider.png';
 import uocLogo from '../public/sponsors/uoc_logo.png';
 import yodeckLogo from '../public/sponsors/yodeck.png';
 import epignosisLogo from '../public/sponsors/epignosis-logo.png';
-import netcompanyLogo from 'netcompany.png';
+import netcompanyLogo from '../public/sponsors/netcompany.png';
 
 type Sponsor = {
   title: string;
