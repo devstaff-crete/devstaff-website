@@ -20,6 +20,7 @@ import telestriderLogo from '../public/sponsors/telestrider.png';
 import uocLogo from '../public/sponsors/uoc_logo.png';
 import yodeckLogo from '../public/sponsors/yodeck.png';
 import epignosisLogo from '../public/sponsors/epignosis-logo.png';
+import netcompanyLogo from '../public/sponsors/netcompany.png';
 
 type Sponsor = {
   title: string;
@@ -30,6 +31,13 @@ type Sponsor = {
 };
 
 export const sponsors: Sponsor[] = [
+  {
+    title: 'Netcompany-Intrasoft',
+    image: netcompanyLogo,
+    website: 'https://www.netcompany-intrasoft.com/',
+    facebookUrl: 'https://www.facebook.com/netcompanyintrasoft/',
+    linkedInUrl: 'https://www.linkedin.com/company/netcompany-intrasoft-sa/'
+  },
   {
     title: 'Epignosis',
     image: epignosisLogo,
