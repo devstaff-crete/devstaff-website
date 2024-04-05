@@ -9,6 +9,14 @@ type Event = {
 
 export const events: Event[] = [
   {
+    date: '11/04/2024',
+    time: '19:00',
+    title: 'Modern Security Practices',
+    location: 'FoRTH, Step-C Building',
+    locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
+    eventUrl: 'https://www.meetup.com/devstaff/events/300184586/'
+  },
+  {
     date: '14/03/2024',
     time: '19:00',
     title: 'Elevating Software Quality: Inception, Accessibility and Performance Testing',
