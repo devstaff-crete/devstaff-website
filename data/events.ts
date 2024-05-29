@@ -9,6 +9,14 @@ type Event = {
 
 export const events: Event[] = [
   {
+    date: '30/05/2024',
+    time: '19:00',
+    title: 'Exploring Private Decentralized Storage: An Evening with Ian Preston and Peergos\n',
+    location: 'FoRTH, Step-C Building',
+    locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
+    eventUrl: 'https://www.meetup.com/devstaff/events/301014679/'
+  },
+  {
     date: '11/04/2024',
     time: '19:00',
     title: 'Modern Security Practices',
