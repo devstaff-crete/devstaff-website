@@ -19,7 +19,7 @@ export const events: Event[] = [
   {
     date: '11/07/2024',
     time: '19:00',
-    title: 'Modern Git Development Tools & Workflows\n',
+    title: 'Modern Git Development Tools & Workflows',
     location: 'FoRTH, Step-C Building',
     locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
     eventUrl: 'https://www.meetup.com/devstaff/events/301935836/'
