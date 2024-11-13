@@ -9,6 +9,22 @@ type Event = {
 
 export const events: Event[] = [
   {
+    date: '14/11/2024',
+    time: '19:00',
+    title: 'The Only Constant? Change - The Story of racket.gr',
+    location: 'FoRTH, Step-C Building',
+    locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
+    eventUrl: 'https://www.meetup.com/devstaff/events/304470309/'
+  },
+  {
+    date: '10/10/2024',
+    time: '19:00',
+    title: 'From Zero to Spark: An introduction to Big Data Processing',
+    location: 'FoRTH, Step-C Building',
+    locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
+    eventUrl: 'https://www.meetup.com/devstaff/events/303822423/'
+  },
+  {
     date: '12/09/2024',
     time: '19:00',
     title: 'Optimizing Teams and Processes',
