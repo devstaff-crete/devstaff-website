@@ -21,6 +21,7 @@ import uocLogo from '../public/sponsors/uoc_logo.png';
 import yodeckLogo from '../public/sponsors/yodeck.png';
 import epignosisLogo from '../public/sponsors/epignosis-logo.png';
 import netcompanyLogo from '../public/sponsors/netcompany.png';
+import tourmieLogo from '../public/sponsors/Tourmie-logo.png';
 
 type Sponsor = {
   title: string;
@@ -31,6 +32,13 @@ type Sponsor = {
 };
 
 export const sponsors: Sponsor[] = [
+  {
+    title: 'Tourmie',
+    image: tourmieLogo,
+    website: 'https://tourmie.com',
+    facebookUrl: 'https://www.facebook.com/tourmieapp',
+    linkedInUrl: 'https://www.linkedin.com/company/tourmie'
+  },
   {
     title: 'Netcompany-Intrasoft',
     image: netcompanyLogo,
