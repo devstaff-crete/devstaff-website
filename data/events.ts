@@ -9,6 +9,14 @@ type Event = {
 
 export const events: Event[] = [
   {
+    date: '12/12/2024',
+    time: '19:00',
+    title: 'Introducing Bluesky and ATProto',
+    location: 'FoRTH, Step-C Building',
+    locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
+    eventUrl: 'https://www.meetup.com/devstaff/events/304916839/'
+  },
+  {
     date: '14/11/2024',
     time: '19:00',
     title: 'The Only Constant? Change - The Story of racket.gr',
