@@ -22,6 +22,7 @@ import yodeckLogo from '../public/sponsors/yodeck.png';
 import epignosisLogo from '../public/sponsors/epignosis-logo.png';
 import netcompanyLogo from '../public/sponsors/netcompany.png';
 import tourmieLogo from '../public/sponsors/Tourmie-logo.png';
+import otsLogo from '../public/sponsors/OTS_logo_black.png';
 
 type Sponsor = {
   title: string;
@@ -32,6 +33,13 @@ type Sponsor = {
 };
 
 export const sponsors: Sponsor[] = [
+  {
+    title: 'OTS',
+    image: otsLogo,
+    website: 'https://ots.gr',
+    facebookUrl: 'https://www.facebook.com/OTS.GR',
+    linkedInUrl: 'https://www.linkedin.com/company/ots-sa'
+  },
   {
     title: 'Tourmie',
     image: tourmieLogo,
