@@ -18,7 +18,7 @@ const nextConfig = {
     return [
       {
         source: '/draw',
-        destination: 'https://devstaff-draw.vercel.app/',
+        destination: 'https://devstaff-draw.onrender.com',
         permanent: true
       }
     ];
