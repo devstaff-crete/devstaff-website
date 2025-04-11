@@ -9,6 +9,14 @@ type Event = {
 
 export const events: Event[] = [
   {
+    date: '10/04/2025',
+    time: '19:00',
+    title: 'Hack Business Ideas - Find, test, and build things people actually want',
+    location: 'FoRTH, Step-C Building',
+    locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
+    eventUrl: 'https://www.meetup.com/devstaff/events/306981112/'
+  },
+  {
     date: '13/03/2025',
     time: '19:00',
     title: 'Bluetooth technology, from a Linux systems engineer\'s perspective',
