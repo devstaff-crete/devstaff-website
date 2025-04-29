@@ -23,6 +23,7 @@ import epignosisLogo from '../public/sponsors/epignosis-logo.png';
 import netcompanyLogo from '../public/sponsors/netcompany.png';
 import tourmieLogo from '../public/sponsors/Tourmie-logo.png';
 import otsLogo from '../public/sponsors/OTS_logo_black.png';
+import domebaLogo from '../public/sponsors/logo-domeba-white.png';
 
 type Sponsor = {
   title: string;
@@ -33,6 +34,13 @@ type Sponsor = {
 };
 
 export const sponsors: Sponsor[] = [
+  {
+    title: 'domeba',
+    image: domebaLogo,
+    website: 'https://www.domeba.com/en/',
+    facebookUrl: 'https://www.facebook.com/domebateam/',
+    linkedInUrl: 'https://www.linkedin.com/company/domeba-gmbh/'
+  },
   {
     title: 'OTS',
     image: otsLogo,
