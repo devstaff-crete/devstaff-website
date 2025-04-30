@@ -23,7 +23,7 @@ import epignosisLogo from '../public/sponsors/epignosis-logo.png';
 import netcompanyLogo from '../public/sponsors/netcompany.png';
 import tourmieLogo from '../public/sponsors/Tourmie-logo.png';
 import otsLogo from '../public/sponsors/OTS_logo_black.png';
-import domebaLogo from '../public/sponsors/logo-domeba-white.png';
+import domebaLogo from '../public/sponsors/logo-domeba-white.jpeg';
 
 type Sponsor = {
   title: string;
