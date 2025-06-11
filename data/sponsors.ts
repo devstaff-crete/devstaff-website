@@ -36,7 +36,7 @@ type Sponsor = {
 
 export const sponsors: Sponsor[] = [
   {
-    title: 'zaros',
+    title: "ZARPO'S",
     image: zarosLogo,
     website: 'https://www.zaroswater.gr/',
     facebookUrl: 'https://www.facebook.com/Zaroswater',
