@@ -9,6 +9,14 @@ type Event = {
 
 export const events: Event[] = [
   {
+    date: '12/06/2025',
+    time: '19:00',
+    title: 'DevStaff #100 – The Big Celebration! 10 Years, 100 Meetups!',
+    location: 'Fairlo',
+    locationUrl: 'https://maps.app.goo.gl/QogM1Z6ntAbFk4qk7',
+    eventUrl: 'https://www.meetup.com/devstaff/events/308113585/'
+  },
+  {
     date: '08/05/2025',
     time: '19:00',
     title: 'Revolutionizing monoliths - Practical Journeys to Modern Architecture',
