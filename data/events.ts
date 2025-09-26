@@ -9,6 +9,14 @@ type Event = {
 
 export const events: Event[] = [
   {
+    date: '30/09/2025',
+    time: '19:00',
+    title: '[Hack Session] AI for Devs: Crafting Creativity with Gemini 2.5, Imagen & Co',
+    location: 'FoRTH, Main Building, Alkiviades Payatakes room',
+    locationUrl: 'https://www.forth.gr/en/conferencerooms/show/&tid=3',
+    eventUrl: 'https://www.meetup.com/devstaff/events/310743941/'
+  },
+  {
     date: '11/09/2025',
     time: '19:00',
     title: 'Modern Infrastructure Management',
