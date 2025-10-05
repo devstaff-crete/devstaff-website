@@ -9,6 +9,14 @@ type Event = {
 
 export const events: Event[] = [
   {
+    date: '09/10/2025',
+    time: '19:00',
+    title: 'AI Coding Assistants',
+    location: 'FoRTH, Step-C Building',
+    locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
+    eventUrl: 'https://www.meetup.com/devstaff/events/311340415/'
+  },
+  {
     date: '11/09/2025',
     time: '19:00',
     title: 'Modern Infrastructure Management',
