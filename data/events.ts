@@ -9,6 +9,38 @@ type Event = {
 
 export const events: Event[] = [
   {
+    date: '13/11/2025',
+    time: '19:00',
+    title: 'Unlocking Smart Home Potential: Automation, Integration, and Innovation',
+    location: 'FoRTH, Step-C Building',
+    locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
+    eventUrl: 'https://www.meetup.com/devstaff/events/311853886/'
+  },
+  {
+    date: '09/10/2025',
+    time: '19:00',
+    title: 'AI Coding Assistants',
+    location: 'FoRTH, Step-C Building',
+    locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
+    eventUrl: 'https://www.meetup.com/devstaff/events/311340415/'
+  },
+  {
+    date: '11/09/2025',
+    time: '19:00',
+    title: 'Modern Infrastructure Management',
+    location: 'FoRTH, Step-C Building',
+    locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
+    eventUrl: 'https://www.meetup.com/devstaff/events/310750186/'
+  },
+  {
+    date: '12/06/2025',
+    time: '19:00',
+    title: 'DevStaff #100 – The Big Celebration! 10 Years, 100 Meetups!',
+    location: 'Fairlo',
+    locationUrl: 'https://maps.app.goo.gl/QogM1Z6ntAbFk4qk7',
+    eventUrl: 'https://www.meetup.com/devstaff/events/308113585/'
+  },
+  {
     date: '08/05/2025',
     time: '19:00',
     title: 'Revolutionizing monoliths - Practical Journeys to Modern Architecture',
