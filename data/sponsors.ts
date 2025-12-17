@@ -24,6 +24,7 @@ import netcompanyLogo from '../public/sponsors/netcompany.png';
 import tourmieLogo from '../public/sponsors/Tourmie-logo.png';
 import otsLogo from '../public/sponsors/OTS_logo_black.png';
 import domebaLogo from '../public/sponsors/logo-domeba-white.jpeg';
+import zarosLogo from '../public/sponsors/zaros.png';
 import cytechLogo from '../public/sponsors/cytech-logo.png';
 
 type Sponsor = {
@@ -35,6 +36,13 @@ type Sponsor = {
 };
 
 export const sponsors: Sponsor[] = [
+  {
+    title: "ZARO'S",
+    image: zarosLogo,
+    website: 'https://www.zaroswater.gr/',
+    facebookUrl: 'https://www.facebook.com/Zaroswater',
+    linkedInUrl: 'https://www.linkedin.com/company/zaros-water/'
+  },
   {
     title: 'cytech',
     image: cytechLogo,
