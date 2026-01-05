@@ -9,6 +9,14 @@ type Event = {
 
 export const events: Event[] = [
   {
+    date: '08/01/2026',
+    time: '19:00',
+    title: "Programming for kids & New Year's Cake (kopi pitas!)",
+    location: 'FoRTH, Step-C Building',
+    locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
+    eventUrl: 'https://www.meetup.com/devstaff/events/312708821/'
+  },
+  {
     date: '11/12/2025',
     time: '19:00',
     title: '"AI Product Manager" and Other Stupid Job Titles',
