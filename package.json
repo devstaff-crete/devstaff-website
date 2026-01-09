@@ -24,7 +24,7 @@
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
     "@trivago/prettier-plugin-sort-imports": "^6.0.0",
-    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-prettier": "^10.1.8",
     "prettier": "^3.7.4",
     "sass": "^1.57.1"
   }
