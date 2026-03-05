@@ -9,6 +9,14 @@ type Event = {
 
 export const events: Event[] = [
   {
+    date: '12/03/2026',
+    time: '19:00',
+    title: "Beyond OpenClaw: The personal Agent Platform Landscape",
+    location: 'FoRTH, Step-C Building',
+    locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
+    eventUrl: 'https://www.meetup.com/devstaff/events/313599772/'
+  },
+  {
     date: '12/02/2026',
     time: '19:00',
     title: "Unlocking Tech Careers: Insider Insights & Job Hunting Strategies",
