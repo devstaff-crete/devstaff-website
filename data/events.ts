@@ -9,7 +9,7 @@ type Event = {
 
 export const events: Event[] = [
   {
-    date: '07/07/2026',
+    date: '09/07/2026',
     time: '19:00',
     title: "Guiding Engineering Teams with AI",
     location: 'FoRTH, Step-C Building',
