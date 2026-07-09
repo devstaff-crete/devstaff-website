@@ -9,6 +9,22 @@ type Event = {
 
 export const events: Event[] = [
   {
+    date: '09/07/2026',
+    time: '19:00',
+    title: "Guiding Engineering Teams with AI",
+    location: 'FoRTH, Step-C Building',
+    locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
+    eventUrl: 'https://www.meetup.com/devstaff/events/315513609/'
+  },
+  {
+    date: '04/06/2026',
+    time: '19:00',
+    title: "Building Resilient Global Data & Presence Platforms",
+    location: 'FoRTH, Step-C Building',
+    locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
+    eventUrl: 'https://www.meetup.com/devstaff/events/314991412/'
+  },
+  {
     date: '14/05/2026',
     time: '19:00',
     title: "Investments for Geeks",
