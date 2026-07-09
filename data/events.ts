@@ -25,14 +25,6 @@ export const events: Event[] = [
     eventUrl: 'https://www.meetup.com/devstaff/events/314991412/'
   },
   {
-    date: '04/06/2026',
-    time: '19:00',
-    title: "Investments for Geeks",
-    location: 'FoRTH, Step-C Building',
-    locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
-    eventUrl: 'https://www.meetup.com/devstaff/events/314693234/'
-  },
-  {
     date: '14/05/2026',
     time: '19:00',
     title: "Investments for Geeks",
