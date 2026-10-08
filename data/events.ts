@@ -7,7 +7,31 @@ type Event = {
   eventUrl: string;
 };
 
-export const events: Event[] = [
+export const events: Event[] = [  
+  {
+    date: '08/10/2026',
+    time: '19:00',
+    title: "Sandboxing AI Coding Agents",
+    location: 'FoRTH, Step-C Building',
+    locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
+    eventUrl: 'https://www.meetup.com/devstaff/events/316766900/'
+  },
+  {
+    date: '10/09/2026',
+    time: '19:00',
+    title: "The Local LLM Dilemma",
+    location: 'FoRTH, Step-C Building',
+    locationUrl: 'https://goo.gl/maps/ZpCiitT3yDCcpumd9',
+    eventUrl: 'https://www.meetup.com/devstaff/events/316369160/'
+  },
+  {
+    date: '23/07/2026',
+    time: '19:30',
+    title: "Summer social get-together (Sea View + Grill)",
+    location: 'Leof. Sofokli Venizelou 107, Iraklio',
+    locationUrl: 'https://maps.google.com/?q=Leof.+Sofokli+Venizelou+107,+Iraklio',
+    eventUrl: 'https://www.meetup.com/devstaff/events/315691303/'
+  },
   {
     date: '09/07/2026',
     time: '19:00',
